@@ -1,0 +1,25 @@
+/* Nitro/Store Blocks */
+[class^=channel_] > div > [href="/store"],
+[class^=channel_] > div > [href="/shop"],
+[class^=channelTextArea] [class^=buttons_] > button,
+[class^=upsellVisible_],
+[class^=premiumIconWrapper],
+[class^=characterCount_] [class*=upsell_],
+[class^=emojiSection_] [class*=shinyButton_],
+[class*=tryItOutSection_],
+[class^=premiumIcon],
+[class^=customizationSection_] + [class^=upsellContainer_],
+[class^=customizationSection_][class*=disabled_],
+[class*=bannerNitroUpsell_],
+[class^=imageUploaderHint_],
+[class^=imagePickerContainer_] > [class^=optionBox_]:nth-child(2) {
+  display: none !important;
+}
+
+/* Removes the annoying ads in the app launcher */
+section[class^=positionContainer_] 
+div[class^=scrollableContent_] > 
+div > 
+:nth-last-child(-n+5) {
+ display: none;
+}
