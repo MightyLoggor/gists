@@ -1,7 +1,7 @@
 /* Nitro/Store Blocks */
 [class^=channel_] > div > [href="/store"],
 [class^=channel_] > div > [href="/shop"],
-[class^=channelTextArea] [class^=buttons_] > [class^=container] > button,
+[class^=channelTextArea] [class^=buttons_] > button,
 [class^=upsellVisible_],
 [class^=premiumIconWrapper],
 [class^=characterCount_] [class*=upsell_],
