@@ -1,0 +1,18 @@
+/* Remove Material from the window name */
+div[class^=wordmarkWindows_]::before {
+  display: none;
+}
+
+div[class^=wordmarkWindows_]::after {
+  font-weight: 700;
+}
+
+/* Sticker selector fix */
+.row_c6367b {
+  column-gap: 67px !important;
+}
+
+/* Chat scroll fix */
+div[class^=scrollableContainer_] div[class^=textArea_]{
+  height: 45px;
+}
