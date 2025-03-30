@@ -1,0 +1,18 @@
+/* SIDE BAR FIX */
+div[class^=sidebar_] nav[class^=wrapper_] {
+  margin-bottom: unset !important;
+}
+
+div[class^=sidebar_] section[class^=panels_] {
+  margin-left: var(--custom-guild-list-width);
+  width: calc(100% - var(--space-xs)* 2 - var(--custom-guild-list-width)) !important;
+
+  [class^=lottieIcon_] svg {
+    width: auto!important;
+    height: auto!important;
+  }
+
+  div[class^=actionButtons_] button {
+    padding: unset;
+  }
+}
