@@ -12,16 +12,16 @@ div > [class*="layout_"] {
     margin: 0.3px;
 }
 
-[class^="memberInner"]:has([mask*="online"], [fill="#43a25a"]) {
+[class^="memberInner"]:has([mask*="online"], [fill="#40a258"]) {
     background: var(--gDM-online);
 }
 [class^="memberInner"]:has([mask*="offline"], [fill="#f0b232"]) {
     background: var(--gDM-offline);
 }
-[class^="memberInner"]:has([mask*="dnd"], [fill="#d83a42"]) {
+[class^="memberInner"]:has([mask*="dnd"], [fill="#d83a41"]) {
     background: var(--gDM-dnd);
 }
-[class^="memberInner"]:has([mask*="idle"], [fill="#ca9654"]) {
+[class^="memberInner"]:has([mask*="idle"], [fill="#cc954c"]) {
     background: var(--gDM-idle);
 }
 [class^="memberInner"]:has([mask*="streaming"], [fill="#9147ff"]) {
