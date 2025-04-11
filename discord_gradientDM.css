@@ -12,16 +12,16 @@ ul > li > [class*="interactive_"] {
     margin: 0.3px;
 }
 
-[class^="link_"]:has([mask*="online"], [fill="#43a25a"]) {
+[class^="link_"]:has([mask*="online"], [fill="#40a258"]) {
     background: var(--gDM-online);
 }
 [class^="link_"]:has([mask*="offline"], [fill="#f0b232"]) {
     background: var(--gDM-offline);
 }
-[class^="link_"]:has([mask*="dnd"], [fill="#d83a42"]) {
+[class^="link_"]:has([mask*="dnd"], [fill="#d83a41"]) {
     background: var(--gDM-dnd);
 }
-[class^="link_"]:has([mask*="idle"], [fill="#ca9654"]) {
+[class^="link_"]:has([mask*="idle"], [fill="#cc954c"]) {
     background: var(--gDM-idle);
 }
 [class^="link_"]:has([mask*="streaming"], [fill="#9147ff"]) {
