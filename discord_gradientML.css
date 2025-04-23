@@ -7,25 +7,27 @@
     --gDM-border-radius: 12px;
 }
 
-div > [class*="layout_"] {
+aside[class^=membersWrap_] div[class^=member_] {
     border-radius: var(--gDM-border-radius);
-    margin: 0.3px;
+    margin-top: 2px;
 }
 
-[class^="memberInner"]:has([mask*="online"], [fill="#40a258"]) {
+aside[class^=membersWrap_] div[class^=member_]:has([mask*="online"], [fill="#40a258"]):not(:has(video)) { 
     background: var(--gDM-online);
 }
-[class^="memberInner"]:has([mask*="offline"], [fill="#f0b232"]) {
+
+aside[class^=membersWrap_] div[class^=member_]:has([mask*="offline"], [fill="#f0b232"]):not(:has(video)) { 
     background: var(--gDM-offline);
 }
-[class^="memberInner"]:has([mask*="dnd"], [fill="#d83a41"]) {
+
+aside[class^=membersWrap_] div[class^=member_]:has([mask*="dnd"], [fill="#d83a41"]):not(:has(video)) {
     background: var(--gDM-dnd);
 }
-[class^="memberInner"]:has([mask*="idle"], [fill="#cc954c"]) {
+
+aside[class^=membersWrap_] div[class^=member_]:has([mask*="idle"], [fill="#cc954c"]):not(:has(video)) { 
     background: var(--gDM-idle);
 }
-[class^="memberInner"]:has([mask*="streaming"], [fill="#9147ff"]) {
+
+aside[class^=membersWrap_] div[class^=member_]:has([mask*="streaming"], [fill="#9147ff"]):not(:has(video)) { 
     background: var(--gDM-streaming);
 }
-/* make the pill fill all of the memberlist */
-[class*="memberInner_"][class*="layout_"] {width: 100%}
