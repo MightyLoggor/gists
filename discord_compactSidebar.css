@@ -3,16 +3,19 @@ nav[class^=wrapper_] {
   margin-bottom: unset !important;
 }
 
-section[class^=panels_] {
+/* Scope: Adjust panel layout when custom guild list is present */
+section[class^="panels_"] {
   margin-left: var(--custom-guild-list-width);
-  width: calc(100% - var(--space-xs)* 2 - var(--custom-guild-list-width)) !important;
+  width: calc(100% - var(--space-xs) * 2 - var(--custom-guild-list-width)) !important;
+}
 
-  div[class^=lottieIcon_] svg {
-    width: auto!important;
-    height: auto!important;
-  }
+/* Optimize Lottie icons inside panels */
+section[class^="panels_"] div[class^="lottieIcon_"] svg {
+  width: auto !important;
+  height: auto !important;
+}
 
-  div[class^=actionButtons_] button {
-    padding: unset;
-  }
+/* Clean button padding in action buttons inside panels */
+section[class^="panels_"] div[class^="actionButtons_"] button {
+  padding: 0 !important;
 }
