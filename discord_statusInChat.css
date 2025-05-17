@@ -5,7 +5,7 @@
     --chat-status-icon-size: 75%;
 }
 /* desktop & web */
-path:is([d^="M4 2.5c-1.103 0-2 .897-2 2v11c0 1.104.897 2"],[d^="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48"]) {
+main path:is([d^="M4 2.5c-1.103 0-2 .897-2 2v11c0 1.104.897 2"],[d^="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48"]) {
     /* online */
     .vc-platform-indicator > svg[fill="#43a25a"] > & {
         d: path("M3 11a.8.8 90 0 0 16 0 .8.8 90 0 0-16 0");
@@ -21,7 +21,7 @@ path:is([d^="M4 2.5c-1.103 0-2 .897-2 2v11c0 1.104.897 2"],[d^="M12 2C6.48 2 2 6
     }
 }
 /* mobile */
-path[d^="M 187 0 L 813 0 C 916.277 0 1000 83.723 1000 187 L"] {
+main path[d^="M 187 0 L 813 0 C 916.277 0 1000 83.723 1000 187 L"] {
     /* online */
     .vc-platform-indicator > svg[fill="#43a25a"] > & {
         d: path("M-168.032 673.112a58.811 58.811 90 0 0 1176.224 0 58.811 58.811 90 0 0-1176.224 0");
@@ -37,7 +37,7 @@ path[d^="M 187 0 L 813 0 C 916.277 0 1000 83.723 1000 187 L"] {
     }
 }
 /* console */
-path[d^="M14.8 2.7 9 3.1V47h3.3c1.7 0 6.2.3 10 .7l6.7.6V2l-4.2"] {
+main path[d^="M14.8 2.7 9 3.1V47h3.3c1.7 0 6.2.3 10 .7l6.7.6V2l-4.2"] {
     /* online */
     .vc-platform-indicator > svg[fill="#43a25a"] > & {
         d: path("M 2.2222 22.8889 a 1.6667 1.6667 90 0 0 33.3333 0 a 1.6667 1.6667 90 0 0 -33.3333 0");
@@ -61,6 +61,6 @@ path[d^="M14.8 2.7 9 3.1V47h3.3c1.7 0 6.2.3 10 .7l6.7.6V2l-4.2"] {
     }
 }
 /* remove awkward gap between status icon and timestamp */
-[id^=chat-messages] h3 [class^=timestamp_] {
+main [id^=chat-messages] h3 [class^=timestamp_] {
     margin-left: 0;
 }
