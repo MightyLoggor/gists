@@ -1,8 +1,9 @@
 /* Nitro/Store Blocks */
-[class^=channel_] > div > [href="/store"],
-[class^=channel_] > div > [href="/shop"],
-[class^=channelTextArea] [class^=buttons_] > button,
-[class^=channelTextArea] [class^=buttons_] [class^=container_] > button,
+nav li[class^=channel_] > div > [href="/store"],
+nav li[class^=channel_] > div > [href="/shop"],
+form div[class^=channelTextArea] [class^=buttons_] > button,
+form div[class^=channelTextArea] [class^=buttons_] [class^=container_] > button
+/* Fix them later for better performance 
 [class^=upsellVisible_],
 [class^=premiumIconWrapper],
 [class^=characterCount_] [class*=upsell_],
@@ -13,7 +14,8 @@
 [class^=customizationSection_][class*=disabled_],
 [class*=bannerNitroUpsell_],
 [class^=imageUploaderHint_],
-[class^=imagePickerContainer_] > [class^=optionBox_]:nth-child(2) {
+[class^=imagePickerContainer_] > [class^=optionBox_]:nth-child(2)  */
+{
   display: none !important;
 }
 
