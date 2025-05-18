@@ -19,3 +19,18 @@ section[class^="panels_"] div[class^="lottieIcon_"] svg {
 section[class^="panels_"] div[class^="actionButtons_"] button {
   padding: 0 !important;
 }
+
+.theme-dark #vc-spotify-player {
+  background: unset;
+}
+
+/* Remove top border radius when the Spotify player is present */
+section div[id="vc-spotify-player"] + div[class^="container_"] {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+/* Fix margin alignment on container blocks */
+section > div[class^="container__"] {
+  margin-right: -1px;
+}
