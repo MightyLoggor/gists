@@ -1,8 +1,7 @@
 /* Nitro/Store Blocks */
 nav li[class^=channel_] > div > [href="/store"],
 nav li[class^=channel_] > div > [href="/shop"],
-form div[class^=channelTextArea] [class^=buttons_] > button,
-form div[class^=channelTextArea] [class^=buttons_] [class^=container_] > button
+form div[class^=channelTextArea] [class^=buttons__] > [class^=button__]
 /* Fix them later for better performance 
 [class^=upsellVisible_],
 [class^=premiumIconWrapper],
