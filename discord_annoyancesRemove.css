@@ -1,7 +1,7 @@
 /* Nitro/Store Blocks */
-nav li[class^=channel_] > div > [href="/store"],
-nav li[class^=channel_] > div > [href="/shop"],
-form div[class^=channelTextArea] [class^=buttons__] > [class^=button__]
+nav li > div > [href="/store"],
+nav li > div > [href="/shop"],
+form div[class$=channelTextArea] [class$=-buttons] > [class$=-button]:not([class$=chatbar-button])
 /* Fix them later for better performance 
 [class^=upsellVisible_],
 [class^=premiumIconWrapper],
@@ -19,9 +19,10 @@ form div[class^=channelTextArea] [class^=buttons__] > [class^=button__]
 }
 
 /* Removes the annoying ads in the app launcher */
-section[class^=positionContainer_] 
+/* section[class^=positionContainer_] 
 div[class^=scrollableContent_] > 
 div > 
 :nth-last-child(-n+8) {
  display: none;
 }
+*/
